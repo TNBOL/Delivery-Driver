@@ -32,7 +32,7 @@ public class Delivery : MonoBehaviour
             Destroy(other.gameObject, destroyDelay);
         }
 
-        if (other.tag == "Customer" && hasPackage)
+        else if (other.tag == "Customer" && hasPackage)
 
         {
             Debug.Log("Package Delivered");
